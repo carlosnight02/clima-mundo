@@ -3,8 +3,7 @@ const axios= require('axios');
 const getLugarLatLng= async( ubicacion ) => {
 
     const encodeUrl = encodeURI( ubicacion );
-    console.log( encodeUrl );
-
+   
     const instance = axios.create({
         baseURL: `https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=${ encodeUrl }`,
         headers: {'x-rapidapi-key': '8aa1647a6amsh91652a5277e69cep1c49a2jsn3c1642c7cb7a'} 
