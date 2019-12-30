@@ -12,7 +12,7 @@ const getLugarLatLng= async( ubicacion ) => {
     const resp = await instance.get();
         
     if(resp.data.Results.length === 0){
-        throw new Error(`No hat resultado para ${ubicacion}`);
+        throw new Error(`No hay resultado para ${ubicacion}`);
     }
 
     const data = resp.data.Results[0];
